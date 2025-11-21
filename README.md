@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# React Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, interactive quiz application built with React and Tailwind CSS to test your React knowledge.
+
+## Features
+
+- 🎯 **10 React Questions** - Covering fundamentals, hooks, components, and best practices
+- 🎨 **Modern UI** - Clean design with gradient effects and smooth animations
+- ✅ **Instant Feedback** - Correct answers highlighted in green, incorrect in red
+- 📊 **Score Tracking** - Keep track of your progress throughout the quiz
+- 🏆 **Results Screen** - Personalized feedback based on your performance
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
+- 🔄 **Restart Option** - Take the quiz multiple times to improve your score
+
+## Tech Stack
+
+- **React** - UI component library
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **JavaScript** - ES6+ features
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Janani1403/short-quiz.git
+cd short-quiz
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:5173`)
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm run dev`
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode with Vite's fast hot module replacement (HMR).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `dist` folder. The build is optimized for best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run preview`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Previews the production build locally.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+short-quiz/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── Answer.jsx      # Individual answer component
+│   │   ├── Home.jsx         # Landing page
+│   │   ├── Question.jsx     # Question display component
+│   │   └── Quiz.jsx         # Main quiz logic component
+│   ├── data.js              # Quiz questions data
+│   ├── index.css            # Global styles with Tailwind
+│   └── index.jsx            # App entry point
+├── index.html               # HTML template
+├── package.json
+├── vite.config.js           # Vite configuration
+└── tailwind.config.js       # Tailwind configuration
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Quiz Flow
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Home Page** - Welcome screen with quiz description
+2. **Quiz Questions** - 10 multiple-choice questions with randomized answer order
+3. **Answer Selection** - Click to select an answer (only once per question)
+4. **Visual Feedback** - Immediate color-coded feedback on selection
+5. **Results** - Final score with personalized message based on performance
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Scoring System
 
-## Learn More
+- **10/10** - Perfect score! You're a React expert! 🎉
+- **8-9** - Excellent work! Strong grasp of React concepts
+- **5-7** - Good job! Keep practicing React fundamentals
+- **<5** - Keep learning! Review the concepts and try again
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is open source and available under the MIT License.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Janani1403
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy learning! 🚀
